@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { MovieContext } from "./MovieContext";
+
 export const MovieProvider = ({ children }) => {
   const [favorites, setFavorites] = useState(() => {
     const storedFavs = localStorage.getItem("favorites");
